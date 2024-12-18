@@ -1,0 +1,130 @@
+.pdf-view-page {
+  position: relative;
+  margin: 10px;
+  width: 1000px;
+  top: 100px;
+}
+
+.pdf-viewer {
+  margin-bottom: 20px;
+  width: 70%; /* PDF section occupies 70% */
+}
+
+.media-buttons {
+  display: flex;              /* Use Flexbox for horizontal alignment */
+  justify-content: center;    /* Centers buttons horizontally */
+  gap: 10px;                  /* Adds space between buttons */
+  margin-top: 20px;           /* Optional: Adds space above the button group */
+}
+
+.media-buttons button {
+  padding: 10px 20px;         /* Makes the buttons larger */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;         /* Optional: Adds rounded corners */
+  transition: background-color 0.3s ease; /* Optional: Smooth hover transition */
+}
+
+.media-buttons button:hover {
+  background-color: #001d3b;  /* Change button color on hover */
+}
+
+.details-section {
+  margin-top: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  cursor: pointer;
+}
+  
+.download-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+  
+.download-btn:hover {
+  background-color: #43ff6c;
+}
+
+
+.details-section {
+  margin-top: 20px;
+}
+
+.pdf-and-notes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.notes-section {
+  width: 25%; /* Notes section occupies 25% */
+}
+
+.take-notes-button {
+  margin-top: 10px;
+}
+
+.notes-editor {
+  margin-top: 20px;
+}
+
+.ql-editor {
+  min-height: 200px;
+  padding: 10px;
+  background-color: #fff; /* Optional: white background for the editor */
+  border: 1px solid #ccc; /* Adds a border around the editor */
+  border-radius: 5px;
+}
+
+.save-notes-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.save-notes-button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional styling for Quill toolbar (rich text editor) */
+.ql-toolbar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background for the toolbar */
+}

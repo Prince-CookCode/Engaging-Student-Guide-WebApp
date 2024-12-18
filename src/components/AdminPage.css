@@ -1,0 +1,98 @@
+/* AdminPage.css */
+
+.admin-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-group label input {
+    margin-right: 10px;
+}
+
+.upload-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #218838;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e2e3e5;
+    color: #333;
+    border-radius: 4px;
+    text-align: center;
+}

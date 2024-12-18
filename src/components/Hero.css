@@ -1,0 +1,96 @@
+/* Ensure html and body take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Make sure parent containers stretch full height */
+.hero {
+    background-image: url('/public/images/back.jpg'); /* Replace with your image */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full width */
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    
+    
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.hero-content {
+    margin-top: 100px;
+    margin-left: -500px;
+    color: white;
+    text-align: left; /* Aligns the text to the left */
+    
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    left: 100px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px; /* Adds some spacing between the text and button */
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #005613;
+    cursor: pointer;
+    animation: moveUpDown 2s infinite;
+}
+
+
+/* Ensure full responsiveness */
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.25rem;
+    }
+}
+
+ /* Keyframes for Up and Down Movement */
+ @keyframes moveUpDown {
+    0% {
+      transform: translateY(0); /* Starting position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to starting position */
+    }
+  }
+

@@ -1,0 +1,168 @@
+/* Content Grid */
+.content-grid {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    top: 100px;
+    
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.grid-item {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.grid-item img {
+    width: 100%;
+    display: block;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    
+}
+
+.pagination a {
+    margin: 0 5px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+/* Info Cards Section */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+.card-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Summarize Button */
+.summarize-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.card:hover .summarize-button {
+    display: block;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f8f9fa;   /* Light background for contrast */
+    padding: 20px 0;             /* Padding to create space */
+    text-align: center;          /* Center align text */
+    margin-top: 50px;            /* Add space above the footer */
+    position: relative;          /* Keeps the footer at the bottom */
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;           /* Restrict width for large screens */
+    margin: 0 auto;
+    padding: 0 15px;             /* Add padding for smaller devices */
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d;              /* Muted text color */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #007bff;              /* Links with your button color */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;  /* Underline on hover */
+}
+
